@@ -85,7 +85,7 @@ gulp.task('autoPrefixer',['compileSass'], () => {
   .pipe(gulp.dest('css'));
 });
 
-gulp.task('reload', ['concatScripts', 'autoPrefixer'], () => {
+gulp.task('reload', ['minifyScripts', 'autoPrefixer'], () => {
   browserSync.reload();
 })
 
@@ -103,6 +103,7 @@ gulp.task('watchFiles', () =>{
 
   gulp.watch(['js/main.js'], ['reload']);      // - Perform concatenation when main.js changes
   
+  gulp.watch(['./*.html'], ['reload']);
 
 })
 

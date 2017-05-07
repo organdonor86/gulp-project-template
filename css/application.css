@@ -39,19 +39,19 @@ li {
 
 /* Pseudo-classes ------------------ */
 a:link {
-  color: red;
+  color: orange;
   text-decoration: none; }
 
 a:visited {
   color: #add8e6; }
 
 a:hover {
-  color: rgba(255, 0, 0, 0.5); }
+  color: rgba(255, 165, 0, 0.5); }
 
 .main-header {
   padding-top: 170px;
   height: 850px;
-  background: linear-gradient(red, transparent 90%), linear-gradient(0deg, #fff, transparent), red url("../img/mountains.jpg") no-repeat center;
+  background: linear-gradient(orange, transparent 90%), linear-gradient(0deg, #fff, transparent), orange url("../img/mountains.jpg") no-repeat center;
   background-size: cover; }
   @media (max-width: 768px) {
     .main-header {
@@ -61,7 +61,7 @@ a:hover {
 .main-footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  border-bottom: 10px solid red; }
+  border-bottom: 10px solid orange; }
   @media (max-width: 768px) {
     .main-footer {
       padding: 20px 0; } }
@@ -79,7 +79,7 @@ a:hover {
   color: #fff;
   text-align: left;
   padding: 18% 24%;
-  border-top: 10px solid red;
+  border-top: 10px solid orange;
   margin: 105px 0 60px;
   background: #48525c url("../img/bear.jpg") no-repeat center;
   background-size: cover;
@@ -181,5 +181,3 @@ a:hover {
   @media (max-width: 768px) {
     .arrow {
       display: none; } }
-
-/*# sourceMappingURL=application.css.map */
